@@ -1,5 +1,5 @@
 WITH WinePerformance AS (
-    SELECT
+    SELECT DISTINCT
         name, region, variety,
         CAST(substr(name, length(name) - 3, 4) AS INTEGER) AS wine_year,  -- Extract the year from the name
         rating, notes
